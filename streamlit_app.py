@@ -10,7 +10,7 @@ slt.text('🍄 Omega 3 & Blueberry Oatmeal')
 slt.text('🌿 Kale, Spinach & Rocket Smoothie')
 slt.text('🐓 Hard-Boiled Free-Range Egg')
 slt.header('🍌🍇 Build your own smoothie 🍉🍋')
-fruits_selected=slt.multiselect("Pick some fruits:", list(my_fruit_list.index),'Avocado','Strawberries'])
+fruits_selected=slt.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
 fruits_to_show=my_fruit_list.loc[fruits_selected]
 slt.dataframe(fruits_to_show)
 
